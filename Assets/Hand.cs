@@ -37,7 +37,7 @@ public class Hand : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.CompareTag("Interactable"))
+        if (!other.gameObject.CompareTag("interactable"))
         {
             return;
         }
@@ -46,7 +46,7 @@ public class Hand : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (!other.gameObject.CompareTag("Interactable"))
+        if (!other.gameObject.CompareTag("interactable"))
         {
             return;
         }
